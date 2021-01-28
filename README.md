@@ -1,6 +1,6 @@
 ## Quickstart
 
-- `cd/client`
+- `cd client`
 - `npm install`
 - `npm start`
 
