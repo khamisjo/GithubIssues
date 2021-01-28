@@ -1,0 +1,10 @@
+.pageContainer {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(
+    0deg,
+    rgb(243, 241, 242) 0%,
+    rgb(148, 142, 142) 49%,
+    rgb(172, 169, 166) 98%
+  );
+}
