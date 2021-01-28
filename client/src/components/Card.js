@@ -29,6 +29,8 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 
 export default class IssueCard extends React.Component {
+  //Issue state color is green if it's open or red if closed
+  stateColor = this.props.state === "open" ? "text-success" : "text-danger";
   render() {
     return (
       <div>
@@ -48,7 +50,7 @@ export default class IssueCard extends React.Component {
             <Card.Subtitle className="mb-2 text-primary">
               Issue ID: {this.props.id}
             </Card.Subtitle>
-            <Card.Subtitle className="text-primary">
+            <Card.Subtitle className={this.stateColor}>
               {this.props.state}
             </Card.Subtitle>
           </Card.Body>
